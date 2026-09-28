@@ -76,7 +76,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\lotte\AppData\Local\Temp\tmp1qirpx2c.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpow_o4tdy.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -205,21 +205,21 @@ Module['FS_createPath']("/", "fonts", true, true);
 
   })();
 
-// end include: C:\Users\lotte\AppData\Local\Temp\tmp1qirpx2c.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmp095p05j7.js
+// end include: C:\Users\lotte\AppData\Local\Temp\tmpow_o4tdy.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpw2jbr8ra.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmp095p05j7.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmptblhxdvw.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmpw2jbr8ra.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmppi0gdrfi.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmptblhxdvw.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmppi0gdrfi.js
 
 
 var programArgs = [];
@@ -8565,6 +8565,8 @@ function checkIncomingModuleAPI() {
 }
 function DownloadTextFile(filename,text) { const blob = new Blob([UTF8ToString(text)], { type: 'text/csv;charset=utf-8' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = UTF8ToString(filename); document.body.appendChild(a); a.click(); document.body.removeChild(a); setTimeout(function() { URL.revokeObjectURL(a.href); }, 1000); }
 function PostTextToUrl(url,text) { fetch(UTF8ToString(url), { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: UTF8ToString(text) }).catch(function(e) { console.error('Results upload failed', e); }); }
+function BrowserInnerWidth() { return window.innerWidth; }
+function BrowserInnerHeight() { return window.innerHeight; }
 function ImGui_ImplGlfw_EmscriptenOpenURL(url) { url = url ? UTF8ToString(url) : null; if (url) window.open(url, '_blank'); }
 
 // Imports from the Wasm binary.
@@ -8617,6 +8619,10 @@ function assignWasmExports(wasmExports) {
 }
 
 var wasmImports = {
+  /** @export */
+  BrowserInnerHeight,
+  /** @export */
+  BrowserInnerWidth,
   /** @export */
   DownloadTextFile,
   /** @export */
