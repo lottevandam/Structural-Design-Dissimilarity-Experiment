@@ -76,7 +76,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\lotte\AppData\Local\Temp\tmp7hwexqf0.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmp9qsp1sjg.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -201,25 +201,25 @@ Module['FS_createPath']("/", "fonts", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/data/1.geo", "start": 0, "end": 5351}, {"filename": "/data/2.geo", "start": 5351, "end": 9165}, {"filename": "/data/3.geo", "start": 9165, "end": 32673}, {"filename": "/data/4.geo", "start": 32673, "end": 38693}, {"filename": "/data/5.geo", "start": 38693, "end": 47942}, {"filename": "/data/6.geo", "start": 47942, "end": 60252}, {"filename": "/data/7.geo", "start": 60252, "end": 65108}, {"filename": "/data/example_building_1.geo", "start": 65108, "end": 67094}, {"filename": "/data/example_building_2.geo", "start": 67094, "end": 69844}, {"filename": "/data/example_building_3.geo", "start": 69844, "end": 70890}, {"filename": "/data/example_building_4.geo", "start": 70890, "end": 71858}, {"filename": "/fonts/segoeui.ttf", "start": 71858, "end": 1031610}], "remote_package_size": 1031610});
+    loadPackage({"files": [{"filename": "/data/1.geo", "start": 0, "end": 5351}, {"filename": "/data/2.geo", "start": 5351, "end": 9165}, {"filename": "/data/3.geo", "start": 9165, "end": 32673}, {"filename": "/data/4.geo", "start": 32673, "end": 38693}, {"filename": "/data/5.geo", "start": 38693, "end": 47942}, {"filename": "/data/6.geo", "start": 47942, "end": 60252}, {"filename": "/data/7.geo", "start": 60252, "end": 65108}, {"filename": "/data/example_building_1.geo", "start": 65108, "end": 67094}, {"filename": "/data/example_building_2.geo", "start": 67094, "end": 69844}, {"filename": "/data/example_building_3.geo", "start": 69844, "end": 70890}, {"filename": "/data/example_building_4.geo", "start": 70890, "end": 71858}, {"filename": "/fonts/segoeui.ttf", "start": 71858, "end": 1031610}, {"filename": "/fonts/segoeuib.ttf", "start": 1031610, "end": 1978702}], "remote_package_size": 1978702});
 
   })();
 
-// end include: C:\Users\lotte\AppData\Local\Temp\tmp7hwexqf0.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmpg8jfn8ln.js
+// end include: C:\Users\lotte\AppData\Local\Temp\tmp9qsp1sjg.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpyb8nx2eb.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmpg8jfn8ln.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmpcxk7x8y9.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmpyb8nx2eb.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmp0tf46u00.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmpcxk7x8y9.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmp0tf46u00.js
 
 
 var programArgs = [];
