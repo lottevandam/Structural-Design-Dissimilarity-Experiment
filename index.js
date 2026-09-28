@@ -76,7 +76,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\lotte\AppData\Local\Temp\tmpg0fqezw4.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpfbznp0p8.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -205,21 +205,21 @@ Module['FS_createPath']("/", "fonts", true, true);
 
   })();
 
-// end include: C:\Users\lotte\AppData\Local\Temp\tmpg0fqezw4.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmpsicyhr2i.js
+// end include: C:\Users\lotte\AppData\Local\Temp\tmpfbznp0p8.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpca75p8a8.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmpsicyhr2i.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmp10512717.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmpca75p8a8.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmp3ig2x16c.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmp10512717.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmp3ig2x16c.js
 
 
 var programArgs = [];
@@ -7914,8 +7914,6 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
 
   var _glfwGetKey = (winid, key) => GLFW.getKey(winid, key);
 
-  var _glfwGetPrimaryMonitor = () => 1;
-
   var _glfwGetTime = () => GLFW.getTime() - GLFW.initialTime;
 
   var _glfwGetWindowSize = (winid, width, height) => GLFW.getWindowSize(winid, width, height);
@@ -8567,6 +8565,7 @@ function DownloadTextFile(filename,text) { const blob = new Blob([UTF8ToString(t
 function PostTextToUrl(url,text) { fetch(UTF8ToString(url), { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: UTF8ToString(text) }).catch(function(e) { console.error('Results upload failed', e); }); }
 function BrowserInnerWidth() { return window.innerWidth; }
 function BrowserInnerHeight() { return window.innerHeight; }
+function BrowserDevicePixelRatio() { return window.devicePixelRatio || 1.0; }
 function ImGui_ImplGlfw_EmscriptenOpenURL(url) { url = url ? UTF8ToString(url) : null; if (url) window.open(url, '_blank'); }
 
 // Imports from the Wasm binary.
@@ -8619,6 +8618,8 @@ function assignWasmExports(wasmExports) {
 }
 
 var wasmImports = {
+  /** @export */
+  BrowserDevicePixelRatio,
   /** @export */
   BrowserInnerHeight,
   /** @export */
@@ -8801,8 +8802,6 @@ var wasmImports = {
   glfwGetJoystickButtons: _glfwGetJoystickButtons,
   /** @export */
   glfwGetKey: _glfwGetKey,
-  /** @export */
-  glfwGetPrimaryMonitor: _glfwGetPrimaryMonitor,
   /** @export */
   glfwGetTime: _glfwGetTime,
   /** @export */
