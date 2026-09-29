@@ -76,7 +76,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\lotte\AppData\Local\Temp\tmp5_r378kd.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpaut7tto0.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -201,25 +201,25 @@ Module['FS_createPath']("/", "fonts", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/data/1.geo", "start": 0, "end": 5351}, {"filename": "/data/10.geo", "start": 5351, "end": 18391}, {"filename": "/data/11.geo", "start": 18391, "end": 39558}, {"filename": "/data/12.geo", "start": 39558, "end": 45428}, {"filename": "/data/13.geo", "start": 45428, "end": 57124}, {"filename": "/data/14.geo", "start": 57124, "end": 62577}, {"filename": "/data/15.geo", "start": 62577, "end": 82850}, {"filename": "/data/16.geo", "start": 82850, "end": 90297}, {"filename": "/data/2.geo", "start": 90297, "end": 94111}, {"filename": "/data/3.geo", "start": 94111, "end": 117619}, {"filename": "/data/4.geo", "start": 117619, "end": 123639}, {"filename": "/data/5.geo", "start": 123639, "end": 127739}, {"filename": "/data/6.geo", "start": 127739, "end": 140049}, {"filename": "/data/7.geo", "start": 140049, "end": 144905}, {"filename": "/data/8.geo", "start": 144905, "end": 150729}, {"filename": "/data/9.geo", "start": 150729, "end": 156577}, {"filename": "/data/example_building_1.geo", "start": 156577, "end": 158563}, {"filename": "/data/example_building_2.geo", "start": 158563, "end": 161313}, {"filename": "/data/example_building_3.geo", "start": 161313, "end": 162359}, {"filename": "/data/example_building_4.geo", "start": 162359, "end": 163327}, {"filename": "/fonts/segoeui.ttf", "start": 163327, "end": 1123079}, {"filename": "/fonts/segoeuib.ttf", "start": 1123079, "end": 2070171}, {"filename": "/fonts/segoeuiz.ttf", "start": 2070171, "end": 2612311}], "remote_package_size": 2612311});
+    loadPackage({"files": [{"filename": "/data/1.geo", "start": 0, "end": 5351}, {"filename": "/data/10.geo", "start": 5351, "end": 18391}, {"filename": "/data/11.geo", "start": 18391, "end": 39558}, {"filename": "/data/12.geo", "start": 39558, "end": 45428}, {"filename": "/data/13.geo", "start": 45428, "end": 57124}, {"filename": "/data/14.geo", "start": 57124, "end": 62577}, {"filename": "/data/15.geo", "start": 62577, "end": 82850}, {"filename": "/data/16.geo", "start": 82850, "end": 90297}, {"filename": "/data/2.geo", "start": 90297, "end": 94111}, {"filename": "/data/3.geo", "start": 94111, "end": 117619}, {"filename": "/data/4.geo", "start": 117619, "end": 123639}, {"filename": "/data/5.geo", "start": 123639, "end": 127739}, {"filename": "/data/6.geo", "start": 127739, "end": 140049}, {"filename": "/data/7.geo", "start": 140049, "end": 144905}, {"filename": "/data/8.geo", "start": 144905, "end": 150729}, {"filename": "/data/9.geo", "start": 150729, "end": 156577}, {"filename": "/data/example_building_1.geo", "start": 156577, "end": 158563}, {"filename": "/data/example_building_2.geo", "start": 158563, "end": 161313}, {"filename": "/data/example_building_3.geo", "start": 161313, "end": 162359}, {"filename": "/data/example_building_4.geo", "start": 162359, "end": 163327}, {"filename": "/data/practice_1.geo", "start": 163327, "end": 165519}, {"filename": "/data/practice_2.geo", "start": 165519, "end": 168547}, {"filename": "/fonts/segoeui.ttf", "start": 168547, "end": 1128299}, {"filename": "/fonts/segoeuib.ttf", "start": 1128299, "end": 2075391}, {"filename": "/fonts/segoeuiz.ttf", "start": 2075391, "end": 2617531}], "remote_package_size": 2617531});
 
   })();
 
-// end include: C:\Users\lotte\AppData\Local\Temp\tmp5_r378kd.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmp1jd5rlx1.js
+// end include: C:\Users\lotte\AppData\Local\Temp\tmpaut7tto0.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpcwiqpb09.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmp1jd5rlx1.js
-// include: C:\Users\lotte\AppData\Local\Temp\tmpkn68k9zn.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmpcwiqpb09.js
+// include: C:\Users\lotte\AppData\Local\Temp\tmpk1ajn1gj.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: C:\Users\lotte\AppData\Local\Temp\tmpkn68k9zn.js
+  // end include: C:\Users\lotte\AppData\Local\Temp\tmpk1ajn1gj.js
 
 
 var programArgs = [];
